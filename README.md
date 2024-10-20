@@ -14,6 +14,6 @@ yarn run dev
 
 ローカルサーバーを立ち上げると、user 権限、admin 権限のときの Header コンポーネントが表示されます
 
-[Header コンポーネントのコード](src/app/components/Header.tsx)
-[Header コンポーネントの親コンポーネント](src/app/page.tsx)
+[Header コンポーネントのコード](src/app/components/Header.tsx)<br/>
+[Header コンポーネントの親コンポーネント](src/app/page.tsx)<br/>
 [props の型を判定する型ガードのユーティリティ](src/app/utils/isPropsOfType.ts)
