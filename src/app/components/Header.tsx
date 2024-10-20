@@ -22,8 +22,14 @@ type HeaderProps = AdminHeaderProps | UserHeaderProps;
 
 function Header(props: HeaderProps) {
   const { title, onPress } = props;
-  const isAdmin = isPropsOfType<HeaderProps, AdminHeaderProps>(props, "admin");
-  const isUser = isPropsOfType<HeaderProps, UserHeaderProps>(props, "user");
+  const isAdmin = isPropsOfType<HeaderProps, AdminHeaderProps["tag"]>(
+    props,
+    "admin"
+  );
+  const isUser = isPropsOfType<HeaderProps, UserHeaderProps["tag"]>(
+    props,
+    "user"
+  );
 
   return (
     <header className="bg-blue-500 text-white">
