@@ -1,5 +1,5 @@
 /**
- * 大元となるPropsと判定したいPropsのtagを指定して、判定したいPropsかどうかを判定する
+ * 大元となるPropsと判定したいPropsのtagを指定して、判定したいPropsかどうかを判定する型ガード
  * @param props 大元となるProps
  * @param tag 判定したいPropsのtag
  */

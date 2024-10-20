@@ -1,5 +1,5 @@
 import React from "react";
-import { isPropsOfType } from "../type/utils";
+import { isPropsOfType } from "../utils/isPropsOfType";
 
 type Tag = "admin" | "user";
 
