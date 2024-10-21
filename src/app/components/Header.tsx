@@ -1,5 +1,4 @@
 import React from "react";
-import { isPropsOfType } from "../utils/isPropsOfType";
 
 type Tag = "admin" | "user";
 
@@ -21,15 +20,9 @@ type UserHeaderProps = BaseHeaderProps & {
 type HeaderProps = AdminHeaderProps | UserHeaderProps;
 
 function Header(props: HeaderProps) {
-  const { title, onPress } = props;
-  const isAdmin = isPropsOfType<HeaderProps, AdminHeaderProps["tag"]>(
-    props,
-    "admin"
-  );
-  const isUser = isPropsOfType<HeaderProps, UserHeaderProps["tag"]>(
-    props,
-    "user"
-  );
+  const { tag, title, onPress } = props;
+  const isAdmin = tag === "admin";
+  const isUser = tag === "user";
 
   return (
     <header className="bg-blue-500 text-white">
