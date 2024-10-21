@@ -1,12 +1,19 @@
-# Zenn の記事のサンプルコード置き場です
+Zenn の記事のサンプルコードです
+
+# 環境構築
+
+## ローカルサーバー起動までの手順
+
+```
+git clone <URL>
+yarn install
+yarn run dev
+```
 
 ## 概要
 
-ブランチごとに記事のサンプルコードをおいていきます。
+ローカルサーバーを立ち上げると、user 権限、admin 権限のときの Header コンポーネントが表示されます
 
-## 共通でやりたいこと
-
-- [ ] husky のプリコミットを使って、コミットメッセージをチェックする
-- [ ] eslint の設定をする
-- [ ] tsconfig の設定をする
-- [ ] main のマージ禁止
+[Header コンポーネントのコード](src/app/components/Header.tsx)<br/>
+[Header コンポーネントの親コンポーネント](src/app/page.tsx)<br/>
+[props の型を判定する型ガードのユーティリティ](src/app/utils/isPropsOfType.ts)
